@@ -1,6 +1,4 @@
-package 100DaysofCoding;
-
-public class Day02 {
+public class day02 {
     
     public static void main(String[] args) {
        String nama ="nurul";
@@ -17,7 +15,7 @@ public class Day02 {
         System.out.print(tanggalLahir+"\n");
         //menggunakan printf()
         System.out.printf("umur  :%d tahun\n", umur);
-        System.out.printf("tinggi badan  :%1.f cm\n", tb);
+        System.out.printf("tinggi badan  :%[.] cm\n", tb);
         System.out.printf("saya wanita  :%b\n", sayaWanita);
         
     }
