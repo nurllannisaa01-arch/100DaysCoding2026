@@ -1,15 +1,28 @@
+import java.util.Scanner;
+
 public class day80 {
     
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
         // Membuat array
-        String[] nama = {"Andi", "Budi", "Citra", "Dewi", "Eka"};
+        int[] angka = new int[5];
 
-        // Menampilkan elemen array berdasarkan indeks
-        System.out.println("Nama pada indeks 0: " + nama[0]);
-        System.out.println("Nama pada indeks 1: " + nama[1]);
-        System.out.println("Nama pada indeks 2: " + nama[2]);
-        System.out.println("Nama pada indeks 3: " + nama[3]);
-        System.out.println("Nama pada indeks 4: " + nama[4]);
+        // Memasukkan data ke array
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Masukkan angka ke-" + (i + 1) + ": ");
+            angka[i] = input.nextInt();
+        }
 
+        // Mengakses elemen berdasarkan indeks
+        System.out.println("\nData berdasarkan indeks:");
+
+        System.out.println("Indeks 0: " + angka[0]);
+        System.out.println("Indeks 1: " + angka[1]);
+        System.out.println("Indeks 2: " + angka[2]);
+        System.out.println("Indeks 3: " + angka[3]);
+        System.out.println("Indeks 4: " + angka[4]);
+
+        input.close();
     }
 }
